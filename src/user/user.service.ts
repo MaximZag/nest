@@ -28,4 +28,8 @@ export class UserService {
             data: { name: userData.name, city: userData.city, age: userData.age },
         });
     }
+
+    deleteUser(userId:string){
+        return this.prismaService.user.delete({where:{id:Number(userId)}})
+    }
 }
