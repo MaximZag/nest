@@ -32,4 +32,5 @@ export class CreateUserDto {
 
     @IsBoolean()
     public status: boolean;
+
 }
